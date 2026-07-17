@@ -37,7 +37,7 @@ export default function Home() {
             docs
           </Link>
           <a
-            href="https://github.com"
+            href="https://github.com/ravipatelctf/cairn"
             className="rounded-md border border-stone-line px-3 py-1.5 hover:border-lichen hover:text-lichen"
           >
             source
