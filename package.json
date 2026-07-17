@@ -1,0 +1,12 @@
+{
+  "name": "cairn",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@11.10.0",
+  "scripts": {
+    "dev": "pnpm --filter @cairn/web dev",
+    "build": "pnpm --filter @cairn/web build",
+    "preview": "pnpm --filter @cairn/web preview",
+    "lint": "pnpm -r lint"
+  }
+}

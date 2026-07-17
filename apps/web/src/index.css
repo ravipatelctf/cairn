@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-slate: #1b1d1b;
+  --color-slate-soft: #24261f;
+  --color-stone: #3a3d38;
+  --color-stone-line: #4a4d46;
+  --color-chalk: #edeee7;
+  --color-chalk-dim: #a9ab9f;
+  --color-lichen: #7c9070;
+  --color-lichen-soft: #556149;
+  --color-dust: #c9a876;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-slate);
+  color: var(--color-chalk);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background-color: var(--color-lichen);
+  color: var(--color-slate);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-dust);
+  outline-offset: 3px;
+}
